@@ -30,20 +30,14 @@ module.exports = (app, passport) => {
 
       const token = jwt.sign({ userId: user._id }, SECRET_KEY, { expiresIn: '10s' });
 
-      res.status(200).json({ token })
+      return res.status(200).json({
+        success: true,
+        message: 'Authentication successful',
+        token: token
+    });
 
     })(req, res, next);
   });
-
-
-
-
-
-
-
-
-
-
 
   app.post('/signup', (req, res, next) => {
     const { email, password } = req.body;
@@ -68,7 +62,11 @@ module.exports = (app, passport) => {
 
       const token = jwt.sign({ userId: user._id }, SECRET_KEY, { expiresIn: '1m' });
       
-      return res.status(200).json({ token });
+      return res.status(200).json({
+        success: true,
+        message: 'Authentication successful',
+        token: token
+    });
 
     })(req, res, next);
   });

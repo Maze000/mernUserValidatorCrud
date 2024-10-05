@@ -24,7 +24,7 @@ const Login = () => {
       .then(data => {
         if(data.messageError){
         
-          console.log('Respuesta recibida desde el puto servidor', data.messageError);
+          
           setMessageLog(data.messageError);
           throw new Error(data.messageError);
         }
@@ -36,7 +36,7 @@ const Login = () => {
       })
       .catch(error => {
 
-        console.error('Error en el inicio de sesión:', error);
+        console.error('Login failed:', error);
       });
   };
 
