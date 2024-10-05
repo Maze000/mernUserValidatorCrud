@@ -6,7 +6,7 @@ const passport = require('passport');
 const flash = require('connect-flash');
 const morgan = require('morgan');
 const session = require('express-session');
-const { url } = require('./config/database.js');
+
  
   app.use(session({
     secret: 'mazeactions',
@@ -45,7 +45,7 @@ app.get('*', (req, res) => {
 if (process.env.NODE_ENV !== 'test') {
 
   
-mongoose.connect(process.env.MONGO_URL|| url)
+mongoose.connect(process.env.MONGO_URL|| 'mongodb://localhost/b44')
   .then(() => {
     console.log('Successfully connected to the database');
   })
