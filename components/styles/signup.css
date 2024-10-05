@@ -1,0 +1,114 @@
+.mainSignup {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.Signup {
+  color: blue;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.Signup-box {
+  width: 400px;
+  min-width: 400px;
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.h1-Signup {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+.form-Signup {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-Signup {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-Signup {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-Signup:hover {
+  background-color: #218838;
+}
+
+.btn-Signup-count {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+
+  color: rgb(102, 102, 102);
+
+
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-Signup-count:hover {
+  color: cadetblue;
+
+}
+
+.img-Signup {
+  width: 50%;
+  background-image: url("l5.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #eff6fe;
+
+}
+
+@media (max-width: 1600px) {
+  .mainSignup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Signup {
+    width: 100%;
+    background-image: url("l5.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+  }
+
+  .Signup-box {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}

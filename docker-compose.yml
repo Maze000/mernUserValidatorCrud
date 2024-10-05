@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+ 
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/mern-app
+    networks:
+      - mern-network
+
+  
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - mern-network
+
+
+networks:
+  mern-network:
+
+
+volumes:
+  mongo-data:
