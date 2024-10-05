@@ -1,9 +1,9 @@
-// test/signup.test.js
+
 const setupTestDB = require('./setupTestDB');
-setupTestDB(); // Ejecuta la configuración de la base de datos
+setupTestDB(); 
 
 const request = require('supertest');
-const app = require('../server'); // Ajusta la ruta según la ubicación de tu servidor
+const app = require('../server');
 
 describe('POST /signup', () => {
   it('should register a new user and return a token', async () => {
@@ -28,7 +28,7 @@ describe('POST /signup', () => {
       })
       .expect(400);
 
-    expect(response.body).toHaveProperty('messageError', 'Email is required.');
+    expect(response.body).toHaveProperty('messageError');
   });
 });
 

@@ -1,4 +1,4 @@
-// test/login.test.js
+
 const setupTestDB = require('./setupTestDB');
 setupTestDB();
 
@@ -7,7 +7,7 @@ const app = require('../server');
 
 describe('POST /login', () => {
   it('should log in an existing user and return a token', async () => {
-    // Primero, crea un usuario para poder iniciar sesión
+   
     await request(app)
       .post('/signup')
       .send({
