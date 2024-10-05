@@ -45,7 +45,7 @@ app.get('*', (req, res) => {
 if (process.env.NODE_ENV !== 'test') {
 
   
-mongoose.connect(process.env.MONGO_URI || url)
+mongoose.connect(process.env.MONGO_URL|| url)
   .then(() => {
     console.log('Successfully connected to the database');
   })
