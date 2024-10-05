@@ -62,5 +62,5 @@ jobs:
 
       - name: Deploy to Railway
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_MERN }}
+          RAILWAY_TOKEN_MERN: ${{ secrets.RAILWAY_TOKEN_MERN }}
         run: railway up --service mernUserValidatorCrud
