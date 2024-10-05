@@ -28,7 +28,7 @@ module.exports = (app, passport) => {
         }
       }
 
-      const token = jwt.sign({ userId: user._id }, SECRET_KEY, { expiresIn: '10s' });
+      const token = jwt.sign({ userId: user._id }, SECRET_KEY, { expiresIn: '1m' });
 
       return res.status(200).json({
         success: true,
