@@ -45,7 +45,7 @@ app.get('*', (req, res) => {
 if (process.env.NODE_ENV !== 'test') {
 
   
-mongoose.connect(process.env.MONGO_URL|| 'mongodb://localhost/b44')
+mongoose.connect(process.env.MONGO_URL)
   .then(() => {
     console.log('Successfully connected to the database');
   })
