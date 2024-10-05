@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const { Task } = require('../config/model');
-const SECRET_KEY = process.env.SECRET_KE;
+const SECRET_KEY = process.env.SECRET_KEY;
 const TOKEN_EXPIRATION=process.env.TOKEN_EXPIRATION
 
 module.exports = (app, passport) => {
@@ -29,7 +29,7 @@ module.exports = (app, passport) => {
         }
       }
 
-      const token = jwt.sign({ userId: user._id }, SECRET_KEY, { expiresIn: '10s' });
+      const token = jwt.sign({ userId: user._id }, SECRET_KEY, { expiresIn: TOKEN_EXPIRATION });
 
       return res.status(200).json({
         success: true,
@@ -61,7 +61,7 @@ module.exports = (app, passport) => {
         }
       }
 
-      const token = jwt.sign({ userId: user._id }, SECRET_KEY, { expiresIn: '10' });
+      const token = jwt.sign({ userId: user._id }, SECRET_KEY, { expiresIn: TOKEN_EXPIRATION });
       
       return res.status(200).json({
         success: true,
