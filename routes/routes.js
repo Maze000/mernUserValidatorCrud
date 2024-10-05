@@ -92,7 +92,7 @@ module.exports = (app, passport) => {
       return false;
     }
     if (!passwordRegex.test(password)) {
-      res.status(400).json({ messageError: 'The password format is invalid.' });
+      res.status(401).json({ messageError: 'The password format is invalid.' });
       return false;
     }
     return true;
