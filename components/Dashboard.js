@@ -11,7 +11,7 @@ const Dashboard = () => {
   const [editStates, setEditStates] = useState({});
 
   const fetchTasks = () => {
-    fetch('/tasks')
+    fetch('/api/tasks')
       .then(response => response.json())
       .then(data => setTasks(data));
   };
@@ -37,7 +37,7 @@ const Dashboard = () => {
     }
     const newTask = { title, description };
 
-    fetch('/tasks', {
+    fetch('/api/tasks', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ const Dashboard = () => {
       return;
     }
 
-    fetch(`/tasks/${id}`, {
+    fetch(`/api/tasks/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const Dashboard = () => {
   };
 
   const deleteTask = (id) => {
-    fetch(`/tasks/${id}`, {
+    fetch(`/api/tasks/${id}`, {
 
       method: 'DELETE',
 

@@ -97,7 +97,7 @@ module.exports = (app, passport) => {
     return true;
   }
 
-  app.get('/tasks', (req, res) => {
+  app.get('/api/tasks', (req, res) => {
     Task.find()
       .then(tasks => {
         res.json(tasks);
@@ -108,7 +108,7 @@ module.exports = (app, passport) => {
   });
 
 
-  app.post('/tasks', (req, res) => {
+  app.post('/api/tasks', (req, res) => {
     const newTask = new Task(req.body);
 
     newTask.save()
@@ -121,7 +121,7 @@ module.exports = (app, passport) => {
   });
 
 
-  app.put('/tasks/:id', (req, res) => {
+  app.put('/api/tasks/:id', (req, res) => {
     Task.findByIdAndUpdate(req.params.id, req.body, { new: true })
       .then(updatedTask => {
         if (!updatedTask) {
@@ -135,7 +135,7 @@ module.exports = (app, passport) => {
   });
 
 
-  app.delete('/tasks/:id', (req, res) => {
+  app.delete('/api/tasks/:id', (req, res) => {
     Task.findByIdAndDelete(req.params.id)
       .then(deletedTask => {
         if (!deletedTask) {
