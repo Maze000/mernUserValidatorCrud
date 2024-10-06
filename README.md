@@ -43,7 +43,7 @@ This project is a full-stack application built with the MERN stack (MongoDB, Exp
 
   - **Start the server**:
 
-    ```bash
+   
     npm start
     ```
 
