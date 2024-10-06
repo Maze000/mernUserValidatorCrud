@@ -6,7 +6,7 @@ const passport = require('passport');
 const flash = require('connect-flash');
 const morgan = require('morgan');
 const session = require('express-session');
-
+require('dotenv').config();
  
   app.use(session({
     secret: 'mazeactions',

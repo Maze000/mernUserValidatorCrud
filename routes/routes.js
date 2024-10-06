@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const { Task } = require('../config/model');
 const SECRET_KEY = process.env.SECRET_KEY;
 const TOKEN_EXPIRATION=process.env.TOKEN_EXPIRATION
-
+require('dotenv').config();
 module.exports = (app, passport) => {
 
   app.get('/logout', (req, res, next) => {
