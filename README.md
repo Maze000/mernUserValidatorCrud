@@ -1,6 +1,7 @@
 # User Authentication with MERN, CRUD, and Access Tokens
- ![Texto alternativo](readmeimg/img_login.png "Título opcional")
- ![Texto alternativo](readmeimg/img_signup.png "Título opcional")
+ ![Login](readmeimg/img_login.png "Login")
+ ![Signup](readmeimg/img_signup.png "Signup")
+ ![Dashboard](readmeimg/task_dashboard.png "Dashboard")
  
 
 This project is a full-stack application built with the MERN stack (MongoDB, Express, React, Node.js). Its primary goal is to provide a user authentication system using JWT tokens and offer CRUD (Create, Read, Update, and Delete) operations on authenticated users. The application includes session management through an access token, ensuring that only authenticated users can access private routes and functionalities.
