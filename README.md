@@ -26,7 +26,7 @@ This project is a full-stack application built with the MERN stack (MongoDB, Exp
 ## Installation
 
 1. Clone this repository:
-   
+   ```bash
    git clone https://github.com/Maze000/mernUserValidatorCrud.git
    cd <project-folder>
 ## Install project dependencies:
