@@ -29,11 +29,11 @@ This project is a full-stack application built with the MERN stack (MongoDB, Exp
    ```bash
    git clone https://github.com/Maze000/mernUserValidatorCrud.git
    cd <project-folder>
-## Install project dependencies:
+2. Install project dependencies:
 
 
 npm install
-## Configure the environment variables in a `.env` file in the project root:
+3. Configure the environment variables in a `.env` file in the project root:
 
 
 - MONGODB_URI=<your_mongodb_uri>
