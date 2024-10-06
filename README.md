@@ -1,4 +1,4 @@
-# User Authentication with MERN, CRUD, and Access Tokens
+# User Authentication with MERN, CRUD and Access Tokens
  <p align="center">
   <img src="readmeimg/img_login.png" alt="Login" title="Login" />
   <br>
