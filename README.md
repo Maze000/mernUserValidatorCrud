@@ -43,7 +43,9 @@ This project is a full-stack application built with the MERN stack (MongoDB, Exp
 
   Start the server:
 
-   npm start
+   ```bash
+    npm start
+    ```
 
 - To access CRUD functionalities and protected routes, make sure to authenticate using a valid token. This token is stored on the client after a successful login.
 
