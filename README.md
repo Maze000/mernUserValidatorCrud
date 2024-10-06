@@ -26,7 +26,7 @@ This project is a full-stack application built with the MERN stack (MongoDB, Exp
 ## Installation
 
 1. Clone this repository:
-   ```bash
+   
    git clone https://github.com/Maze000/mernUserValidatorCrud.git
    cd <project-folder>
 ## Install project dependencies:
@@ -36,16 +36,16 @@ npm install
 ## Configure the environment variables in a `.env` file in the project root:
 
 
-MONGODB_URI=<your_mongodb_uri>
-SECRET_KEY=<your_secret_key>
-TOKEN_EXPIRATION=1h
+- **MONGODB_URI=<your_mongodb_uri>
+- **SECRET_KEY=<your_secret_key>
+- **TOKEN_EXPIRATION=1h
 ## Usage
 
 ### Start the server:
 
 
-npm start
-To access CRUD functionalities and protected routes, make sure to authenticate using a valid token. This token is stored on the client after a successful login.
+- **npm start
+- **To access CRUD functionalities and protected routes, make sure to authenticate using a valid token. This token is stored on the client after a successful login.
 
 ## Main Routes
 
