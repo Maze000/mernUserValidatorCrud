@@ -1,8 +1,11 @@
 # User Authentication with MERN, CRUD, and Access Tokens
- ![Login](readmeimg/img_login.png "Login")
- ![Signup](readmeimg/img_signup.png "Signup")
- ![Dashboard](readmeimg/task_dashboard.png "Dashboard")
- 
+ <p align="center">
+  <img src="readmeimg/img_login.png" alt="Login" title="Login" />
+  <br>
+  <img src="readmeimg/img_signup.png" alt="Signup" title="Signup" />
+  <br>
+  <img src="readmeimg/task_dashboard.png" alt="Dashboard" title="Dashboard" />
+</p>
 
 This project is a full-stack application built with the MERN stack (MongoDB, Express, React, Node.js). Its primary goal is to provide a user authentication system using JWT tokens and offer CRUD (Create, Read, Update, and Delete) operations on authenticated users. The application includes session management through an access token, ensuring that only authenticated users can access private routes and functionalities.
 [View the live demo](https://mernuservalidatorcrud-production.up.railway.app/login "Live Demo")
