@@ -41,7 +41,7 @@ This project is a full-stack application built with the MERN stack (MongoDB, Exp
 - TOKEN_EXPIRATION=1h
 ## Usage
 
-  - **Start the server**:
+  - **Start the server** :
 
    
     npm start
