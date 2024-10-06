@@ -6,14 +6,14 @@ const request = require('supertest');
 const app = require('../server');
 const { Task } = require('../config/model'); 
 
-describe('GET /tasks', () => {
+describe('GET /api/tasks', () => {
   it('should return a list of tasks', async () => {
    
     await Task.create({ title: 'Task 1', description: 'Description 1' });
     await Task.create({ title: 'Task 2', description: 'Description 2' });
 
     const response = await request(app)
-      .get('/tasks')
+      .get('/api/tasks')
       .expect('Content-Type', /json/)
       .expect(200);
 
