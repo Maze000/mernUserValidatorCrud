@@ -8,7 +8,7 @@
 </p>
 
 This project is a full-stack application built with the MERN stack (MongoDB, Express, React, Node.js). Its primary goal is to provide a user authentication system using JWT tokens and offer CRUD (Create, Read, Update, and Delete) operations on authenticated users. The application includes session management through an access token, ensuring that only authenticated users can access private routes and functionalities.
-[View the live demo](https://mernuservalidatorcrud-production.up.railway.app/login "Live Demo")
+[View the live demo](https://mernuservalidatorcrud-production.up.railway.app/login "Live Demo") :rocket: 🚀
 
 ## Features
 
