@@ -1,4 +1,4 @@
-# User Authentication with MERN, CRUD and Access Tokens
+# API RESTful, User Authentication with MERN, CRUD and Access Tokens, REST architecture
  <p align="center">
   <img src="readmeimg/img_login.png" alt="Login" title="Login" />
   <br>
