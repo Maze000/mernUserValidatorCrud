@@ -1,4 +1,8 @@
-# API RESTful, User Authentication with MERN, CRUD and Access Tokens, (Docker and testing)
+# API RESTful, User Authentication with MERN, CRUD and Access Tokens
+- **Docker **: User login and registration with secure password storage using hashing.
+- **testing**: Tokens are generated upon login and stored on the client for accessing private routes.
+- **Automatic deployment in railway with workflow and authentication token**: Certain routes are accessible only to authenticated users.
+
  <p align="center">
   <img src="readmeimg/img_login.png" alt="Login" title="Login" />
   <br>
