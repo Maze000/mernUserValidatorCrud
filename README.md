@@ -1,7 +1,7 @@
 # API RESTful, User Authentication with MERN, CRUD and Access Tokens
 - **Docker**
 - **testing whis Jest and Supertest**
-- **Automatic deployment in railway with workflow and authentication token**
+- **Automatic deployment in Railway with workflow and authentication token**
 
  <p align="center">
   <img src="readmeimg/img_login.png" alt="Login" title="Login" />
